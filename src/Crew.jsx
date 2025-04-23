@@ -1,11 +1,5 @@
 import React, { useRef, useState } from 'react';
 import data from './data.js';
-import douglas from './assets/image-douglas-hurley.png';
-import mark from './assets/image-mark-shuttleworth.png';
-import victor from './assets/image-victor-glover.png';
-import anousheh from './assets/image-anousheh-ansari.png';
-
-const crewImages = [douglas, mark, victor, anousheh];
 
 function Crew() {
   const [crewIndex, setCrewIndex] = useState(0);
@@ -16,39 +10,51 @@ function Crew() {
     setCrewIndex(index);
     const children = crewNavigation.current.children;
     for (let i = 0; i < children.length; i++) {
-      const child = children[i];
-      child.classList.remove('active');
+      children[i].classList.remove('active');
     }
     e.target.classList.add('active');
   }
+
+  const { name, role, bio, images } = data.crew[crewIndex];
 
   return (
     <div className='crew-section'>
       <div className="crew-subtitle">
         <span>02 </span>meet your crew
       </div>
-      <>
-        <div className="crew-img">
-          <img src={crewImages[crewIndex]} alt={data.crew[crewIndex].name} />
-        </div>
-        <div ref={crewNavigation} className="crew-navigation">
-          <div data-index={0} onClick={changeTab} className="crew-tab active"></div>
-          <div data-index={1} onClick={changeTab} className="crew-tab"></div>
-          <div data-index={2} onClick={changeTab} className="crew-tab"></div>
-          <div data-index={3} onClick={changeTab} className="crew-tab"></div>
-        </div>
-        <div className="crew-content">
-          <div className="crew-content-role">
-            {data.crew[crewIndex].role}
-          </div>
-          <div className="crew-content-name">
-            {data.crew[crewIndex].name}
-          </div>
-          <div className="crew-content-body">
-            {data.crew[crewIndex].bio}
-          </div>
-        </div>
-      </>
+
+      <div className="crew-img">
+        <picture>
+          <source
+            srcSet={images.webp.replace('../src', '')}
+            type="image/webp"
+          />
+          <img
+            src={images.png.replace('../src', '')}
+            alt={name}
+            width="400"
+            height="400"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+
+      <div ref={crewNavigation} className="crew-navigation">
+        {data.crew.map((_, idx) => (
+          <div
+            key={idx}
+            data-index={idx}
+            onClick={changeTab}
+            className={`crew-tab ${idx === crewIndex ? 'active' : ''}`}
+          ></div>
+        ))}
+      </div>
+
+      <div className="crew-content">
+        <div className="crew-content-role">{role}</div>
+        <div className="crew-content-name">{name}</div>
+        <div className="crew-content-body">{bio}</div>
+      </div>
     </div>
   );
 }
