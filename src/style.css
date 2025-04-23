@@ -87,6 +87,9 @@ body {
                 }
                 
             }
+            nav ul li.active {
+                border-bottom: 3px solid white;
+              }
     }
     .home-section {
         background-image: url(./assets/background-home-mobile.jpg);
