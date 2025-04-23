@@ -1,8 +1,33 @@
-# React + Vite
+# 🚀 Space Tourism Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Explore the cosmos with this interactive, animated, and fully responsive frontend project inspired by a space tourism concept. Built using **React**, **Vite**, and **Tailwind CSS**, this project showcases dynamic content, tabbed navigation, performance optimization, and clean, accessible UI design.
 
-Currently, two official plugins are available:
+**Live Demo**: [View on Netlify](https://your-netlify-site.netlify.app)  
+**Portfolio**: [Gideon Cameron](https://gideons-work-portfolio.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## 🌌 Features
+
+- 🧑‍🚀 Crew tab navigation with dynamic image switching
+- 🌍 Destination explorer with real-time content updates
+- 📱 Responsive design for all screen sizes (mobile/tablet/desktop)
+- 🔄 Route-based navigation with React Router
+- ⚡ Optimized for performance (Lighthouse score ≥ 90)
+- 🎯 Accessible and SEO-ready structure
+
+---
+
+## 🛠️ Tech Stack
+
+- **React.js** (Frontend framework)
+- **Vite** (Bundler and dev server)
+- **Tailwind CSS** (Styling)
+- **React Router DOM** (Routing)
+- **Lighthouse** (Performance testing)
+- **Netlify** (Deployment)
+
+
+
+## 🔗 Project Structure
+
