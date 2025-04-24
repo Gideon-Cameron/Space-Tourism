@@ -2,7 +2,7 @@
 
 Explore the cosmos with this interactive, animated, and fully responsive frontend project inspired by a space tourism concept. Built using **React**, **Vite**, and **Tailwind CSS**, this project showcases dynamic content, tabbed navigation, performance optimization, and clean, accessible UI design.
 
-**Live Demo**: [View on Netlify](https://your-netlify-site.netlify.app)  
+**Live Demo**: [View on Netlify](https://space-tourism-main1.netlify.app/)  
 **Portfolio**: [Gideon Cameron](https://gideons-work-portfolio.netlify.app)
 
 ---
@@ -22,12 +22,7 @@ Explore the cosmos with this interactive, animated, and fully responsive fronten
 
 - **React.js** (Frontend framework)
 - **Vite** (Bundler and dev server)
-- **Tailwind CSS** (Styling)
 - **React Router DOM** (Routing)
 - **Lighthouse** (Performance testing)
 - **Netlify** (Deployment)
-
-
-
-## 🔗 Project Structure
 
