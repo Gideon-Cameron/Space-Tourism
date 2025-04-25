@@ -1,11 +1,13 @@
 # 🚀 Space Tourism Website
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3d5b7051-e4b2-438c-8562-2f71efa14df6/deploy-status)](https://app.netlify.com/sites/space-tourism-main1/deploys)
+![License](https://img.shields.io/github/license/Gideon-Cameron/Space-Tourism)
+![Stars](https://img.shields.io/github/stars/Gideon-Cameron/Space-Tourism?style=social)
 
 Explore the cosmos with this interactive, animated, and fully responsive frontend project inspired by a space tourism concept. Built using **React**, **Vite**, and **Tailwind CSS**, this project showcases dynamic content, tabbed navigation, performance optimization, and clean, accessible UI design.
 
-**Live Demo**: [View on Netlify](https://space-tourism-main1.netlify.app/)  
-**Portfolio**: [Gideon Cameron](https://gideons-work-portfolio.netlify.app)
+**🔗 Live Demo**: [space-tourism-main1.netlify.app](https://space-tourism-main1.netlify.app/)  
+**🌐 Portfolio**: [Gideon Cameron](https://gideons-work-portfolio.netlify.app)
 
 ---
 
@@ -22,9 +24,19 @@ Explore the cosmos with this interactive, animated, and fully responsive fronten
 
 ## 🛠️ Tech Stack
 
-- **React.js** (Frontend framework)
-- **Vite** (Bundler and dev server)
-- **React Router DOM** (Routing)
-- **Lighthouse** (Performance testing)
-- **Netlify** (Deployment)
+- **React.js** – Frontend library
+- **Vite** – Lightning-fast build tool
+- **React Router DOM** – Client-side routing
+- **Tailwind CSS** – Utility-first styling
+- **Lighthouse** – Performance testing
+- **Netlify** – Hosting and CI/CD
 
+---
+
+## 📂 Getting Started
+
+```bash
+git clone https://github.com/Gideon-Cameron/Space-Tourism.git
+cd Space-Tourism
+npm install
+npm run dev
